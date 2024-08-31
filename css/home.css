@@ -1,0 +1,224 @@
+body {
+  margin: auto;
+  padding: auto;
+}
+
+.background-container {
+  background-image: url("../images/Background1Home.png");
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height of the viewport */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Push content to the top */
+  position: relative; /* Allows positioning of children absolutely */
+}
+
+.column h2 {
+  color: white;
+  font-size: 5vw;
+  padding: 2vw;
+  border-radius: 10px; /* Radius border tetap */
+  max-width: 90%;
+  margin: 50px auto; /* Menambahkan margin untuk memusatkan */
+}
+
+/* Logo Container */
+.logo-container {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.logo-container img {
+  height: 30px;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Navbar */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+ul.navbar li {
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+/* Media query to handle smaller screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger button */
+  }
+
+  ul.navbar {
+    display: none; /* Hide the navbar */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8); /* Background for the dropdown menu */
+    width: 100%; /* Full width */
+    position: absolute; /* Position it inside the background-container */
+    top: 60px; /* Below the hamburger */
+    left: 0;
+  }
+
+  ul.navbar.show {
+    display: flex; /* Show the navbar when the menu is toggled */
+  }
+
+  ul.navbar li {
+    text-align: center; /* Center the menu items */
+    width: 100%;
+  }
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li.contact {
+  background-color: red;
+  border-radius: 50px;
+  padding: 5px 5px;
+  transition: 0.5s;
+}
+
+ul.navbar li.contact:hover {
+  background-color: #111;
+}
+
+ul.navbar li.logo {
+  margin-right: auto; /* Keep the logo on the far left */
+}
+
+ul.navbar li.logo img {
+  height: 30px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+  transition: 0.3s;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.mySlides {
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 20px;
+  margin-right: 20vh;
+  border-radius: 20px;
+  width: 50%;
+
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%; /* Mengatur lebar navigasi sesuai dengan gambar */
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding-left: 10px;
+  padding-right: 35px;
+}
+asdasdsd
+.w3-left,
+.w3-right {
+  cursor: pointer;
+  color: red;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.w3-left {
+  left: 0;
+}
