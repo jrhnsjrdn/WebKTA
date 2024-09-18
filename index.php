@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/385c38e2c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -43,15 +44,40 @@
         </ul>
     </div>
 
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="images/download.jpeg">
-        <img class="mySlides" src="images/th (1).jpeg">
-        <img class="mySlides" src="images/th.jpeg">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/download.jpeg" alt="Image 1">
+                <div class="text">
+                    <h2>Pertamina</h2>
+                    <p>Web Design / Branding / UI/UX / Graphic Design</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/th (1).jpeg" alt="Image 2">
+                <div class="text">
+                    <h2>Another Project</h2>
+                    <p>Description of the second project.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/th.jpeg" alt="Image 2">
+                <div class="text">
+                    <h2>Pertamini</h2>
+                    <p>Description of the second project.</p>
+                </div>
+            </div>
+        </div>
         <div class="navigation">
-            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <i class="prev fa-solid fa-chevron-left"></i>
+            <i class="next fa-solid fa-chevron-right"></i>
         </div>
     </div>
+
+    <div>
+        
+    </div>
+
 
     <script src="js/slider.js"></script>
     <script src="js/hamburgerMenu.js"></script>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.text {
+    width: 35%;
+    padding: 20px;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.text p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
