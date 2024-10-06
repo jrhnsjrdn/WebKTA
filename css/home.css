@@ -250,3 +250,82 @@ ul.navbar li.contact:hover {
   }
 }
 
+.about p {
+  font-size: 30px;
+  font-family: 'Manrope';
+  margin: 30vh;
+  color: blue;
+  align-items: center;
+}
+
+.about a {
+  color: red;
+  text-decoration: none;
+}
+
+.services {
+  font-family: 'Manrope';
+  background-color: aqua;
+  padding-top: 5vh;
+  padding-bottom: 30vh;
+}
+
+.services h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  margin-left: 30vh;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: black;
+  color: white;
+  padding-top: 10vh;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  width: auto;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / 7;
+  font-family: 'Manrope';
+  font-size: 20px
+}
+
+.item1 a {
+  color: red;
+  
+}
+
+.item6 {
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.footer-container .item6 h5{
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-container ul li {
+  color: white;
+  list-style-type: none;
+}
+
+.footer-container ul li a{
+  text-decoration: none;
+}

@@ -1,4 +1,3 @@
-
 let currentSlide = 0;
 
 const slides = document.querySelectorAll('.slide');
@@ -13,7 +12,19 @@ document.querySelector('.prev').addEventListener('click', () => {
 });
 
 function goToSlide(slideIndex) {
-    slides[currentSlide].style.transform = `translateX(-${slideIndex * 100}%)`;
-    currentSlide = (slideIndex + totalSlides) % totalSlides;
-    slides[currentSlide].style.transform = `translateX(-${slideIndex * 100}%)`;
+    // Loop back to the first slide if we reach the end
+    if (slideIndex >= totalSlides) {
+        slideIndex = 1;
+    }
+    // Loop back to the last slide if we go below 0
+    else if (slideIndex < 0) {
+        slideIndex = totalSlides;
+    }
+
+    // Position the slides
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - slideIndex) * 100}%)`;
+    });
+
+    currentSlide = slideIndex;
 }
