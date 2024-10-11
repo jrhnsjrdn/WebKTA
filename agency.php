@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitech Agency</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<?php include 'header.php'; ?>
 
 <body>
-    <div class="background-container">
-        <ul class="navbar">
-            <li class="logo">
-                <a href="index.php">
-                    <img src="images/Logo KTA - Blak BG.png" alt="Kapitech Logo">
-                </a>
-            </li>
-            <li><a href="work.php">Work</a></li>
-            <li><a href="agency.php">Agency</a></li>
-            <div class="dropdown">
-                <button class="dropbtn">Services
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Web</a>
-                    <a href="#">Design</a>
-                    <a href="#">Photography</a>
+<div class="background-container-agency">
+        <!-- Logo tetap berada di luar ul.navbar -->
+        <div class="logo-container">
+            <a href="index.php">
+                <img src="images/Logo KTA - Blak BG.png" alt="Kapitech Logo" class="logo">
+            </a>
+        </div>
+
+    <?php include 'navbar.php'; ?>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/download.jpeg" alt="Image 1">
+                <div class="text">
+                    <h2>Pertamina</h2>
+                    <p>Web Design / Branding / UI/UX / Graphic Design</p>
                 </div>
             </div>
-            <li><a href="about.asp">News</a></li>
-            <li class="contact"><a href="about.asp">Contact</a></li>
-        </ul>
-        <div class="column">
-            <!-- Content for the second column -->
-            <h2>KTA&#174 we</h2>
-            <h2>Design and Develop</h2>
+            <div class="slide">
+                <img src="images/th (1).jpeg" alt="Image 2">
+                <div class="text">
+                    <h2>Another Project</h2>
+                    <p>Description of the second project.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/th.jpeg" alt="Image 3">
+                <div class="text">
+                    <h2>Pertamini</h2>
+                    <p>Description of the second project.</p>
+                </div>
+            </div>
         </div>
-        <ul class="bottom-nav">
-            <li><a href="default.asp">Digital Imaging</a></li>
-            <li><a href="news.asp">Creative Design</a></li>
-            <li><a href="contact.asp">Design Implementation</a></li>
-            <li><a href="about.asp">Event 3D Set</a></li>
-            <li><a href="default.asp">UI/UX</a></li>
-            <li><a href="news.asp">Custom Web Development</a></li>
-            <li><a href="contact.asp">Maintenance Web</a></li>
-            <li><a href="about.asp">Event 3D Set</a></li>
-            <li><a href="default.asp">UI/UX</a></li>
-            <li><a href="news.asp">Custom Web Development</a></li>
-            <li><a href="contact.asp">Maintenance Web</a></li>
-        </ul>
+        <div class="navigation">
+            <i class="prev fa-solid fa-chevron-left"></i>
+            <i class="next fa-solid fa-chevron-right"></i>
+        </div>
     </div>
-    <script src="right_scrollArrow.js"></script>
-</body>
 
+    <div class="about">
+        <p> Kapitech is a pioneering digital agency startup that excels in seamlessly blending innovation and aesthetics,
+            with a primary focus on web development and visual experience. Acknowledgin the significance of digital first impression, we go beyond conventional website building to create immersive digital ecosystems that resonate with your audience.
+            Our dedicatet team is committed to transforming your vision into a dynamic and visually compelling reality, ensuring your brand not only stands out but engages users profoundly.
+            Join us in redefining the digital landscape, one pixel at a time, and welcome to the future of web development and visual experiences with Kapitech
+            <a href="agency.php">See Our Work ></a>
+        </p>
+        <p></p>
+    </div>
+</body>
 
 </html>

@@ -6,8 +6,8 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Background Container */
-.background-container {
+/* Home Page Background Container */
+.background-container-home {
   background-image: url("../images/Background1Home.png");
   background-size: cover;
   background-position: center;
@@ -19,6 +19,21 @@ body {
   justify-content: flex-start;
   position: relative;
 }
+
+/* Agency Page Background Container */
+.background-container-agency {
+  background-image: url("../images/Background 1 -Agency, Service, Web Design.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
 
 /* Logo Container */
 .logo-container {
@@ -160,6 +175,7 @@ ul.navbar li.contact:hover {
 
 /* Slider Container */
 .slider-container {
+  padding-top: 30px;
   position: relative;
   margin: auto;
   border-radius: 15px; /* Add rounded corners */
@@ -265,7 +281,7 @@ ul.navbar li.contact:hover {
 
 .services {
   font-family: 'Manrope';
-  background-color: aqua;
+  background-color: red;
   padding-top: 5vh;
   padding-bottom: 30vh;
 }
@@ -318,7 +334,7 @@ ul.navbar li.contact:hover {
 
 .footer-container .item6 h5{
   text-align: center;
-  font-size: 10px;
+  font-size: 18px;
 }
 
 .footer-container ul li {
@@ -328,4 +344,9 @@ ul.navbar li.contact:hover {
 
 .footer-container ul li a{
   text-decoration: none;
+}
+
+.footer-container .footer-address h6{
+  font-size: 18px;
+  line-height: 100%;
 }

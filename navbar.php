@@ -1,33 +1,21 @@
-<html lang="en">
-	<?php
-		require_once('config/init.php');?>
+    <button class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </button>
 
-
-
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/custom-style.css">
-<link rel="stylesheet" type="text/css" href="css/loaders.css">
-
-<body>
-<div class="container-fluid">
-	<nav class="navbar navbar-transparent fixed-top" data-spy="affix" data-offset-top="60">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.php"> CV. Jaya Abadi</a>
+    <ul class="navbar">
+        <li><a href="work.php">Work</a></li>
+        <li><a href="agency.php">Agency</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Web</a>
+                <a href="#">Design</a>
+                <a href="#">Photography</a>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <!--<li class="active"><a href="#">Cek Tarif</a></li>-->
-          </ul>
-		  
-        </div>
-      </div>
-    </nav>
-    
+        <li><a href="about.asp">News</a></li>
+        <li class="contact"><a href="about.asp">Contact</a></li>
+    </ul>
 </div>
