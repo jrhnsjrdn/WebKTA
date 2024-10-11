@@ -34,7 +34,6 @@ body {
   position: relative;
 }
 
-
 /* Logo Container */
 .logo-container {
   position: absolute;
@@ -177,7 +176,7 @@ ul.navbar li.contact:hover {
 .slider-container {
   padding-top: 30px;
   position: relative;
-  margin: auto;
+  padding-left: 50px;
   border-radius: 15px; /* Add rounded corners */
 }
 
@@ -232,7 +231,7 @@ ul.navbar li.contact:hover {
 .navigation {
   position: absolute;
   top: 50%;
-  width: 51%;
+  width: 49%;
   padding-left: 5vh;
   display: flex;
   justify-content: space-between;
@@ -257,18 +256,78 @@ ul.navbar li.contact:hover {
 /* For Smaller Screens */
 @media (max-width: 768px) {
   .slide img {
-      height: auto;
+    height: auto;
   }
 
   .navigation .prev,
   .navigation .next {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+}
+
+.contact-container {
+  background-image: url("../images/Background 2 - Get In Touch.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.contact-container .title {
+  grid-column: span 2 / span 2;
+}
+
+.contact-container .title h1 {
+  align-items: center;
+  font-size: 40px;
+  font-family: "Manrope";
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.contact-container .input-info {
+  grid-row-start: 2;
+  margin-left: 5vh;
+  margin-right: 10px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  color: #f3f3f3;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #f3f3f3;
+}
+
+.interest-button-pick {
+  grid-row-start: 2;
+}
+
+.contact-container .send-button {
+  grid-column: span 2 / span 2;
+  text-align: center;
 }
 
 .about p {
   font-size: 30px;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   margin: 30vh;
   color: blue;
   align-items: center;
@@ -280,7 +339,7 @@ ul.navbar li.contact:hover {
 }
 
 .services {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   background-color: red;
   padding-top: 5vh;
   padding-bottom: 30vh;
@@ -308,10 +367,10 @@ ul.navbar li.contact:hover {
   padding-left: 15vh;
   padding-right: 15vh;
   width: auto;
-  grid-template-areas: 
+  grid-template-areas:
     "item-1 item-1 item-1 item-1"
     "company service address connect"
-    "item-6 item-6 item-6 item-6"; 
+    "item-6 item-6 item-6 item-6";
 }
 
 .grid-container > div {
@@ -323,28 +382,28 @@ ul.navbar li.contact:hover {
 
 .item-1 {
   grid-column: span 4 / span 4;
-  font-family: 'Manrope';
-  font-size: 20px
+  font-family: "Manrope";
+  font-size: 20px;
 }
 
 .item-1 a {
   color: red;
 }
 
-.footer-container .company { 
+.footer-container .company {
   grid-area: company;
-  grid-row-start: 2;  
-}
-
-.footer-container .service { 
   grid-row-start: 2;
 }
 
-.footer-container .address { 
+.footer-container .service {
   grid-row-start: 2;
 }
 
-.footer-container .connect { 
+.footer-container .address {
+  grid-row-start: 2;
+}
+
+.footer-container .connect {
   grid-row-start: 2;
 }
 
@@ -354,7 +413,7 @@ ul.navbar li.contact:hover {
   text-align: center;
 }
 
-.footer-container .item-6 h5{
+.footer-container .item-6 h5 {
   text-align: center;
   font-size: 18px;
 }
@@ -365,11 +424,11 @@ ul.navbar li.contact:hover {
   text-indent: -38px;
 }
 
-.footer-container ul li a{
+.footer-container ul li a {
   text-decoration: none;
 }
 
-.footer-container .footer-address h6{
+.footer-container .footer-address h6 {
   font-size: 18px;
   line-height: 100%;
 }
