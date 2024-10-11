@@ -52,6 +52,9 @@
         </p>
         <p></p>
     </div>
+
+    <?php include 'footer.php'; ?>
+
 </body>
 
 </html>

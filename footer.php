@@ -1,10 +1,13 @@
 <div class="footer-container">
-        <div class="item1">
+    
+        <div class="item-1">
+        <div class="company">
             <p>Starting a new project or want to talk to collaborate with us?
                 <a href="agency.php">Let's Talk! ></a>
             </p>
         </div>
-        <div class="company">
+    </div>
+        <div class="company-container">
             <p>Company</p>
             <ul class="company">
                 <li><a href="services.php">Work</a></li>
@@ -35,7 +38,7 @@
                 <li><a href="services.php">Upwork</a></li>
             </ul>
         </div>
-        <div class="item6">
+        <div class="item-6">
             <h5>Copyright &copy 2023 Kapitech Digital Indonesia LLC >   Headquartered in South Jakarta  ></h5>
             <h5>All Rights Reserved
                 <img src="images/Logo KTA - Blak BG.png" alt="" style="width: 15px;" />

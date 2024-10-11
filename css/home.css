@@ -299,7 +299,8 @@ ul.navbar li.contact:hover {
 
 .footer-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   gap: 10px;
   background-color: black;
   color: white;
@@ -307,6 +308,10 @@ ul.navbar li.contact:hover {
   padding-left: 15vh;
   padding-right: 15vh;
   width: auto;
+  grid-template-areas: 
+    "item-1 item-1 item-1 item-1"
+    "company service address connect"
+    "item-6 item-6 item-6 item-6"; 
 }
 
 .grid-container > div {
@@ -316,23 +321,40 @@ ul.navbar li.contact:hover {
   font-size: 30px;
 }
 
-.item1 {
-  grid-column: 1 / 7;
+.item-1 {
+  grid-column: span 4 / span 4;
   font-family: 'Manrope';
   font-size: 20px
 }
 
-.item1 a {
+.item-1 a {
   color: red;
-  
 }
 
-.item6 {
-  grid-column: 1 / 7;
+.footer-container .company { 
+  grid-area: company;
+  grid-row-start: 2;  
+}
+
+.footer-container .service { 
+  grid-row-start: 2;
+}
+
+.footer-container .address { 
+  grid-row-start: 2;
+}
+
+.footer-container .connect { 
+  grid-row-start: 2;
+}
+
+.footer-container .item-6 {
+  grid-area: item-6;
+  grid-column: span 4 / span 4;
   text-align: center;
 }
 
-.footer-container .item6 h5{
+.footer-container .item-6 h5{
   text-align: center;
   font-size: 18px;
 }
@@ -340,6 +362,7 @@ ul.navbar li.contact:hover {
 .footer-container ul li {
   color: white;
   list-style-type: none;
+  text-indent: -38px;
 }
 
 .footer-container ul li a{
