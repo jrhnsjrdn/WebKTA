@@ -58,10 +58,11 @@ body {
   right: 20px;
 }
 
+
 /* Navbar */
 ul.navbar {
   list-style-type: none;
-  margin: 0;
+  margin: 0 30px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -174,9 +175,8 @@ ul.navbar li.contact:hover {
 
 /* Slider Container */
 .slider-container {
-  padding-top: 30px;
   position: relative;
-  padding-left: 50px;
+  overflow: hidden;
   border-radius: 15px; /* Add rounded corners */
 }
 
@@ -184,6 +184,7 @@ ul.navbar li.contact:hover {
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  padding: 50px 0 50px 0;
 }
 
 /* Slide */
@@ -192,6 +193,7 @@ ul.navbar li.contact:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 5vh;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -231,7 +233,7 @@ ul.navbar li.contact:hover {
 .navigation {
   position: absolute;
   top: 50%;
-  width: 49%;
+  width: 51.1%;
   padding-left: 5vh;
   display: flex;
   justify-content: space-between;

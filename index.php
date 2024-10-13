@@ -34,7 +34,14 @@
                     <img src="images/th.jpeg" alt="Image 3">
                     <div class="text">
                         <h2>Pertamini</h2>
-                        <p>Description of the second project.</p>
+                        <p>Description of the third project.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/bunglon.jpeg" alt="Image 4">
+                    <div class="text">
+                        <h2>pianoman</h2>
+                        <p>Description of the aopkdpakwopaw project.</p>
                     </div>
                 </div>
             </div>
@@ -42,6 +49,8 @@
                 <i class="prev fa-solid fa-chevron-left"></i>
                 <i class="next fa-solid fa-chevron-right"></i>
             </div>
+
+            <script src="js/slider.js"></script>
         </div>
 
         <div class="contact-container">
@@ -93,7 +102,6 @@
 
         <?php include 'footer.php'; ?>
 
-        <script src="js/slider.js"></script>
         <script src="js/hamburgerMenu.js"></script>
 </body>
 
