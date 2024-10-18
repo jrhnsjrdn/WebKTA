@@ -53,6 +53,65 @@
             <script src="js/slider.js"></script>
         </div>
 
+        <div class="about">
+            <p>Kapitech is a leading digital agency based on Jakarta, Indonesia.
+                offering a wide range of services to help businesses to thrive in the digital landscape.
+                With our commitment to inovation, creativity and delivering exceptional results, we are the ideal partner for companies seeking personalized and effective digital solutions.
+                <a href="agency.php">See Our Work ></a>
+            </p>
+            <p><a href="agency.php">About KTA&reg; ></a></p>
+        </div>
+
+        <div class="clients">
+            <h2>Our Clients</h2>
+            <div class="client-container">
+                <div class="client">
+                    <img src="images/Clients Logo/Pertamina.PNG" alt="Client 1">
+                    <img src="images/Clients Logo/Navees.WEBP" alt="Client 2">
+                    <img src="images/Clients Logo/Markplus.PNG" alt="Client 3">
+                    <img src="images/Clients Logo/Logo SAP.png" alt="Client 4">
+                    <img src="images/Clients Logo/Logo INA Solusi Indonesia.png" alt="Client 5">
+                    <img src="images/Clients Logo/Bank BTN.PNG" alt="Client 6">
+                    <img src="images/Clients Logo/Logo SAP.png" alt="Client 4">
+                    <img src="images/Clients Logo/Logo INA Solusi Indonesia.png" alt="Client 5">
+                    <img src="images/Clients Logo/Bank BTN.PNG" alt="Client 6">
+                    <img src="images/Clients Logo/Pertamina.PNG" alt="Client 1">
+                    <img src="images/Clients Logo/Navees.WEBP" alt="Client 2">
+                    <img src="images/Clients Logo/Markplus.PNG" alt="Client 3">
+                    <img src="images/Clients Logo/Logo SAP.png" alt="Client 4">
+                    <img src="images/Clients Logo/Logo INA Solusi Indonesia.png" alt="Client 5">
+                    <img src="images/Clients Logo/Bank BTN.PNG" alt="Client 6">
+                    <img src="images/Clients Logo/Logo SAP.png" alt="Client 4">
+                    <img src="images/Clients Logo/Logo INA Solusi Indonesia.png" alt="Client 5">
+                    <img src="images/Clients Logo/Bank BTN.PNG" alt="Client 6">
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <input type="radio" id="button1" name="btn" checked>
+                    <input type="radio" id="button2" name="btn">
+                    <input type="radio" id="button3" name="btn">
+                    <input type="radio" id="button4" name="btn">
+
+                    <button class="btn" onclick="selectButton('para1')">Button 1</button>
+                    <button class="btn" onclick="selectButton('para2')">Button 2</button>
+                    <button class="btn" onclick="selectButton('para3')">Button 3</button>
+                    <button class="btn" onclick="selectButton('para4')">Button 4</button>
+                </div>
+                <div class="paragraph">
+                    <p class="content" id="para1">
+                        We specialize in developing top-tier websites through the incorporation of contemporary design methodologies. The integration of mobile-first principles and seamless web experiences is imperative for the triumph of your online initiative. Our team is committed to upholding bespoke originality while placing a strong emphasis on responsive design, meticulously optimizing your website for various devices and interfaces. The end result will be a new website designed to allure coveted target audiences,
+                        enhance user engagement, stimulate sales, and ultimately elevate the brand value of your business.</p>
+                    <p class="content" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur sunt assumenda laboriosam, eveniet dicta accusantium iure obcaecati numquam alias veniam perspiciatis modi adipisci fugit maxime quasi, praesentium eius quo rem itaque veritatis incidunt possimus? Harum doloremque reprehenderit neque, nisi qui, architecto inventore molestiae quam provident et voluptatum? Neque, voluptatem..</p>
+                    <p class="content" id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo blanditiis, aperiam esse voluptatem, cupiditate quam laudantium fuga alias et culpa quaerat in ipsa mollitia, similique nostrum veniam expedita. Aperiam obcaecati facilis doloribus animi earum asperiores aspernatur perspiciatis autem est maxime dolor, dolore atque et rem delectus optio veritatis illo! Ipsum!</p>
+                    <p class="content" id="para4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quibusdam, ea ea quo, minima neque, magnam repudiandae numquam dicta voluptatum perspiciatis quidem ratione quisquam. Quo, placeat repellendus? Cumque, molestias! Officiis, iure? Suscipit, architecto nemo repellendus voluptatum </p>
+                </div>
+            </div>
+        </div>
+
         <div class="contact-container">
             <div class="title">
                 <h1>Get In Touch with KTA&reg;</h1>
@@ -73,29 +132,36 @@
             </div>
         </div>
 
-        <div class="about">
-            <p>Kapitech is a leading digital agency based on Jakarta, Indonesia.
-                offering a wide range of services to help businesses to thrive in the digital landscape.
-                With our commitment to inovation, creativity and delivering exceptional results, we are the ideal partner for companies seeking personalized and effective digital solutions.
-                <a href="agency.php">See Our Work ></a>
-            </p>
-            <p><a href="agency.php">About KTA&reg; ></a></p>
-        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
 
-        <div class="services">
-            <h2>Our Services</h2>
-            <div class="service-container">
-                <div class="service">
-                    <h3>Web Development</h3>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
                 </div>
-                <div class="service">
-                    <h3>Branding & Identity</h3>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
                 </div>
-                <div class="service">
-                    <h3>UI/UX Design</h3>
-                </div>
-                <div class="service">
-                    <h3>3D Event Model</h3>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
                 </div>
             </div>
         </div>
@@ -103,6 +169,7 @@
         <?php include 'footer.php'; ?>
 
         <script src="js/hamburgerMenu.js"></script>
+        <script src="js/serviceParagraphContent.js"></script>
 </body>
 
 </html>

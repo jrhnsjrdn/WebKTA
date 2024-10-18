@@ -10,7 +10,6 @@ body {
 .background-container-home {
   background-image: url("../images/Background1Home.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -57,7 +56,6 @@ body {
   top: 25px;
   right: 20px;
 }
-
 
 /* Navbar */
 ul.navbar {
@@ -247,7 +245,7 @@ ul.navbar li.contact:hover {
   font-size: 2rem;
   padding: 10px;
   background: none;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
 }
 
 .navigation .prev:hover,
@@ -340,6 +338,34 @@ select {
   text-decoration: none;
 }
 
+.clients .client-container .client {
+  max-width: 100%;
+  display: flex;
+  margin-left: 5vh;
+  padding: 30px 30px 30px 30px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.clients h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.clients .client img {
+  display: inline;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: 20px;
+  width: 25vh;
+  height: auto;
+  max-height: fit-content;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Service */
+
 .services {
   font-family: "Manrope";
   background-color: red;
@@ -353,10 +379,119 @@ select {
   margin-bottom: 30px;
 }
 
-.service {
-  display: flex;
-  margin-left: 30vh;
+.service-container {
+  display: grid;
+  grid-area: service-container;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
 }
+
+.service {
+  display: block;
+  margin-left: 20vh;
+}
+
+.service button {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.5s ease;
+}
+
+.btn {
+  display: grid;
+  padding: 10px 20px;
+  background-color: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  font-size: large;
+  transition: 0.5s;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.service-container .paragraph {
+  grid-column: service-container;
+  grid-area: 1/2/1/2;
+}
+
+.paragraph {
+  grid-column: span 2;
+}
+
+/* Paragraph styling */
+.paragraph .content {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Show content based on selected button */
+#button1:checked ~ .paragraph #para1,
+#button2:checked ~ .paragraph #para2,
+#button3:checked ~ .paragraph #para3,
+#button4:checked ~ .paragraph #para4 {
+  display: block; /* Show the corresponding paragraph */
+}
+
+/* Portofolio Cards */
+
+/* Float four columns side by side */
+.column {
+  display: flex;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 50px 25px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Footer */
 
 .footer-container {
   display: grid;
@@ -369,6 +504,7 @@ select {
   padding-left: 15vh;
   padding-right: 15vh;
   width: auto;
+  font-size: 0.9rem;
   grid-template-areas:
     "item-1 item-1 item-1 item-1"
     "company service address connect"
@@ -397,12 +533,21 @@ select {
   grid-row-start: 2;
 }
 
-.footer-container .service {
+.footer-container .company-container {
   grid-row-start: 2;
 }
 
-.footer-container .address {
+.footer-container .footer-service {
   grid-row-start: 2;
+}
+
+.footer-container .footer-address {
+  grid-row-start: 2;
+}
+
+.footer-container .footer-address p {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .footer-container .connect {
@@ -417,7 +562,7 @@ select {
 
 .footer-container .item-6 h5 {
   text-align: center;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .footer-container ul li {

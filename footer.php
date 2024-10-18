@@ -11,8 +11,8 @@
             <p>Company</p>
             <ul class="company">
                 <li><a href="services.php">Work</a></li>
-                <li><a href="services.php">Agency</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li><a href="agency.php">Agency</a></li>
+                <li><a href="work.php">Services</a></li>
             </ul>
         </div>
         <div class="footer-service">
@@ -25,9 +25,9 @@
         </div>
         <div class="footer-address">
             <p>Address</p>
-            <h6>Jakarta Selatan, Indonesia</h6>
-            <h6>+62 81311399499</h6>
-            <h6>hellokta@gmail.com</h6>
+            <p>Jakarta Selatan, Indonesia</p>
+            <p>+62 81311399499</p>
+            <p>hellokta@gmail.com</p>
         </div>
         <div class="connect">
             <p>Connect</p>
