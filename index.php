@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'header.php'; ?>
+<?php include 'pages/header.php'; ?>
 
 <body>
     <div class="background-container-home">
@@ -12,7 +12,7 @@
             </a>
         </div>
 
-        <?php include 'navbar.php'; ?>
+        <?php include 'pages/navbar.php'; ?>
 
         <div class="slider-container">
             <div class="slider">
@@ -156,7 +156,6 @@
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
-
             <div class="column">
                 <div class="card">
                     <img src="images/Client Porto/Frame 36.jpg">
