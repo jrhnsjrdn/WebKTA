@@ -135,41 +135,55 @@
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <h3>Card 1</h3>
-                    <p>Some text</p>
-                    <p>Some text</p>
+                    <img src="images/Client Porto/1.jpg">
+                    <h2>Pertamina</h2>
+                    <h3>App Design / Branding / Graphic Design / Packaging Design / UI/UX / Web Design</h3>
                 </div>
             </div>
 
             <div class="column">
                 <div class="card">
-                    <h3>Card 2</h3>
-                    <p>Some text</p>
-                    <p>Some text</p>
+                    <img src="images/Client Porto/75.jpg">
+                    <h2>Navees</h2>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
             </div>
 
             <div class="column">
                 <div class="card">
-                    <h3>Card 3</h3>
-                    <p>Some text</p>
-                    <p>Some text</p>
+                    <img src="images/Client Porto/Frame 3.jpg">
+                    <h2>Bank BTN</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
 
             <div class="column">
                 <div class="card">
-                    <h3>Card 4</h3>
-                    <p>Some text</p>
-                    <p>Some text</p>
+                    <img src="images/Client Porto/Frame 36.jpg">
+                    <h2>Markplus</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum!</h3>
                 </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/Client Porto/Frame 4.jpg">
+                    <h2>BKKBN</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </div>
+            </div>
+            <div class="navigation-card">
+                <i class="prevCard fa-solid fa-chevron-left"></i>
+                <i class="nextCard fa-solid fa-chevron-right"></i>
             </div>
         </div>
+    </div>
 
-        <?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
-        <script src="js/hamburgerMenu.js"></script>
-        <script src="js/serviceParagraphContent.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/serviceParagraphContent.js"></script>
+    <script src="js/cardSlider.js"></script>
 </body>
 
 </html>

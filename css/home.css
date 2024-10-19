@@ -453,18 +453,22 @@ input[type="radio"] {
 
 /* Portofolio Cards */
 
-/* Float four columns side by side */
-.column {
-  display: flex;
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 50px 25px;
+  overflow-x: auto;
+  margin: 50px 80px 50px 80px;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  scroll-behavior: smooth;
+}
 
+/* Float four columns side by side */
+.column {
+  flex: 0 0 50%; /* Flex-grow, flex-shrink, and flex-basis for responsive width */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 15px; /* Add horizontal padding between cards */
 }
 
 /* Clear floats after the columns */
@@ -474,21 +478,62 @@ input[type="radio"] {
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
   background-color: #f1f1f1;
+  width: 95%;
+  font-family: "Manrope";
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 20px;
+}
+
+.card h3 {
+  font-size: 15px;
+}
+
+.navigation-card {
+  position: sticky; /* Positioned relative to .row */
+  display: inline-block;
+  align-self: center;
+  align-items: center;
+  top: 50%; /* Center vertically */
+  left: 0; /* Align left */
+  right: 0; /* Align right */
+  width: 93%; /* Span the width of the container */
+  display: flex;
+  justify-content: space-between; /* Push buttons to opposite ends */
+
+}
+
+.navigation-card i {
+  pointer-events: all; /* Allow clicks on buttons */
+  cursor: pointer;
+  font-size: 2rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7); /* Optional: semi-transparent background */
+  padding: 10px;
+  border-radius: 50%;
+  position: relative; /* Relative to .navigation */
+  z-index: 1; /* Stay on top of the content */
+}
+
+.prevCard {
+  position: absolute;
+  left: 0;
+  float: left;
+}
+
+.nextCard {
+  right: 10px;
 }
 
 /* Footer */
